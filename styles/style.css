@@ -1,1 +1,81 @@
-/* место для вашего кода */
+body {
+  max-width: 1440px;
+  margin: auto;
+  text-underline-position: under;
+  color: #000;
+  min-height: 100%;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 10% 1fr;
+  place-content: center;
+  align-items: center;
+  padding: 93px 52px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.header__links-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__logo-image {
+  max-width: 148px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.header__address {
+  justify-self: end;
+}
+
+.cover {
+  padding: 165px 0 50px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  /* потом убрать */
+  height: 757px;
+
+}
+
+.overlay {
+  background-color: rgb(0 0 0 / 0.6);
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}
+
+.cover__title {
+  font-size: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1;
+}
