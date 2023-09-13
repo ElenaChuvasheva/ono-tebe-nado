@@ -3,15 +3,14 @@ body {
   margin: auto;
   text-underline-position: under;
   color: #000;
-  /* min-height: 100%; */
 }
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 10% 1fr;
+  grid-template-columns: 1fr 12% 1fr;
   place-content: center;
   align-items: center;
-  padding: 93px 52px;
+  padding: 92px 52px;
   font-weight: 400;
   font-size: 18px;
 }
@@ -29,6 +28,11 @@ body {
 
 .header__link_active {
   text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  padding-left: 8px;
 }
 
 .header__logo-image {
