@@ -1,8 +1,8 @@
 body {
   max-width: 1440px;
   margin: auto;
+  color: #fff;
   text-underline-position: under;
-  color: #000;
 }
 
 .header {
@@ -11,6 +11,7 @@ body {
   place-content: center;
   align-items: center;
   padding: 92px 52px;
+  color: #000;
   font-weight: 400;
   font-size: 18px;
 }
@@ -54,37 +55,35 @@ body {
 }
 
 .cover {
-  padding: 165px 50px 50px;
+  position: relative;
+  height: 757px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
-  min-height: 757px;
 }
 
 .overlay {
-  background-color: rgba(0 0 0 / 0.6);
-  height: 100%;
   position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
   top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0 0 0 / 0.6);
 }
 
 .cover__title {
-  font-size: 100px;
+  position: absolute;
+  top: 165px;
+  right: 50px;
+  left: 50px;
+  z-index: 1;
+  color: #fff;
   font-weight: 700;
+  font-size: 100px;
   line-height: 1.15;
   letter-spacing: 30px;
-  color: #fff;
   text-transform: uppercase;
-  position: absolute;
-  z-index: 1;
-  top: 165px;
-  left: 50px;
-  right: 50px;
 }
 
 .aligned-text {
@@ -92,13 +91,13 @@ body {
 }
 
 .aligned-text-center {
-  text-align: center;
   line-height: 1.4;
+  text-align: center;
 }
 
 .aligned-text_right {
-  text-align: right;
   line-height: 1;
+  text-align: right;
 }
 
 .letter-spacing-extended {
@@ -107,4 +106,35 @@ body {
 
 .no-letter-spacing {
   letter-spacing: 0;
+}
+
+.cover__description {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  min-width: 1000px;
+  justify-content: space-between;
+}
+
+.cover__description-item {
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.cover__description-text {
+  padding-left: 32px;
+  word-spacing: 17px;
+}
+
+.bet-button {
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  font-family: Raleway, Arial, sans-serif;
+  background-color: transparent;
 }
