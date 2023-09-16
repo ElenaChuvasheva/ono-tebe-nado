@@ -26,12 +26,14 @@ p,
 ul,
 ol,
 li,
-blockquote {
+blockquote,
+address {
   margin: 0;
   padding: 0;
 }
 
 a {
+  max-width: fit-content;
   color: inherit;
 }
 
